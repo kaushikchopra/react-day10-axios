@@ -1,0 +1,119 @@
+.container {
+  margin: 20px;
+  padding-bottom: 20px;
+  border: 1px solid hsl(0, 0%, 0%);
+  border-radius: 15px;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.user-data {
+  border: 1px solid #000;
+  border-radius: 15px;
+  margin: 40px;
+  text-align: center;
+}
+
+.error {
+  text-align: center;
+  animation: fadeIn 5s;
+}
+
+.user-name ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 51px;
+  justify-content: center;
+}
+
+.user-name ul li {
+  display: flex;
+  align-items: center;
+  margin: 15px 10px;
+  padding: 10px 60px;
+  border: 2px solid #0c0c0c;
+  border-radius: 5px;
+  position: relative;
+}
+
+.user-name ul li:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #000;
+  color: #fff;
+}
+
+.hr-line {
+  border-top: 1px solid #8e8e8e;
+  width: 50%;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.btn {
+  cursor: pointer;
+  margin: 0 30px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 30px;
+  background-color: #000;
+  color: #fff;
+}
+
+.btn:disabled {
+  background-color: #8e8e8e;
+  cursor: not-allowed;
+}
+
+.delete-button {
+  background-color: #fff;
+  color: #ff5733;
+  border: none;
+  padding: 6px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.delete-button:hover {
+  background-color: #ff5733;
+  color: white;
+}
+
+.alert-container {
+  height: 50px;
+  overflow: hidden;
+}
+
+.alert {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  animation: fadeInOut 5s ease-in-out; /* Use the fadeInOut animation with a 2-second duration */
+}
+
+/* Animation for the alert (fade in and out) */
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1; /* Fully opaque in the middle of the animation */
+  }
+}

@@ -1,0 +1,90 @@
+.add-data-container {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 30px;
+  background-color: #000;
+  color: #fff;
+}
+
+.submit-btn:hover {
+  background-color: #333;
+}
+
+.close-btn {
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  font-size: 1.25rem;
+}
+
+.close-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Success Alert */
+.alert-container {
+  height: 50px;
+  overflow: hidden;
+}
+
+.alert {
+  background-color: #4caf50; 
+  color: white; 
+  text-align: center; 
+  padding: 10px; 
+  margin-bottom: 10px; 
+  border-radius: 4px; 
+  animation: fadeInOut 5s ease-in-out; /* Use the fadeInOut animation with a 2-second duration */
+}
+
+/* Animation for the alert (fade in and out) */
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0; 
+  }
+  50% {
+    opacity: 1; /* Fully opaque in the middle of the animation */
+  }
+}

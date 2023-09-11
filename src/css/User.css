@@ -1,0 +1,11 @@
+.user {
+  display: flex;
+  flex-direction: column;
+}
+
+.user .p-tag {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 350px;
+  font-size: 1.2rem;
+}

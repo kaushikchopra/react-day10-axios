@@ -1,0 +1,88 @@
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+  .user .p-tag {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin: 16px 10px;
+  }
+
+  .user-name ul {
+    display: block;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .user-name ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    padding: 10px;
+    border: none;
+    position: relative;
+  }
+
+  .delete-button {
+    background-color: #fff;
+    color: #ff5733;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  /* Media query for the header */
+  .container h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Media query for the buttons */
+  .button-div {
+    flex-direction: column;
+  }
+
+  .btn {
+    margin: 10px auto;
+    width: 60%;
+  }
+
+  /* Media query for the alert */
+  .alert {
+    padding: 10px 15px;
+  }
+
+  /* Media query for User component */
+  .user .p-tag {
+    margin: 16px 20px;
+  }
+
+  .user-name ul li {
+    margin: 15px 5px;
+    padding: 10px 20px;
+  }
+}
+
+/* Media query for larger screens (up to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .user .p-tag {
+    margin: 16px 50px;
+  }
+
+  /* Additional styles for larger screens (up to 1024px) */
+  .user .p-tag .name,
+  .user .p-tag .email,
+  .user .p-tag .username,
+  .user .p-tag .address,
+  .user .p-tag .company-name {
+    font-size: 1.2rem;
+  }
+}
